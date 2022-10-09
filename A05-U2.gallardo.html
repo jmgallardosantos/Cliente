@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A05-U2</title>
+</head>
+<body>
+
+    <Script>
+
+    var numero = prompt("Indicanos tu numero: ");
+
+    var letra = prompt("Indicanos tu letra en Mayuscula: ");
+
+    var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L',
+
+'C', 'K', 'E', 'T'];
+
+    if (numero < 0 || numero > 99999999){
+        alert ('El numeros no es valido');
+    }else {
+        resto = numero % 23;
+    }
+
+    if (letra == ((letras[resto]))){
+
+        alert ('Tu numero y letra del DNI son validos');
+    }else{
+        alert ('Tu letra no coincide');
+
+    }
+
+</Script>
+    
+</body>
+</html>

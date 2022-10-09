@@ -1,0 +1,37 @@
+<body>
+    <div>
+   <h3 id="cabecera">Tu solución es :</h3>
+    </div>
+    <script>
+   debugger;
+
+    var numero=prompt("Introduce un numero:");
+    var c=confirm("Pulsa aceptar, si, cancelar si quieres sumar los decimales");
+    var texto;
+    if (c){
+         
+        var resultado = 0;
+        //numero = numero.toFixed(2); 
+
+            for (var i=0; i < numero.length; i++){
+                if (numero[i] === ","){
+                    continue;
+                } else {
+                    resultado += parseInt(numero[i]);
+                }
+            }
+            document.write(resultado);
+        }
+    else{
+
+        var resultado = 0;
+            numero = Math.trunc(parseInt(numero));
+            for (var i=0; i<=numero.length; i++){
+            resultado += parseInt(numero[i]);
+
+            }
+            document.write(resultado);
+        }
+
+    </script>
+    </body>
