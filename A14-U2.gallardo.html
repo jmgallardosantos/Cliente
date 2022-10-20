@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A14-U2</title>
+</head>
+<body>
+    <script>
+        //Ejemplo de palíndromo complejo: "La ruta nos aporto otro paso natural".
+        // Atar a la rata
+var palabra = prompt("Escribe una palabra");
+palabra = palabra.replace(/\s+/g, '');
+palabra = palabra.toLowerCase();
+var normal = palabra.split('');
+var vuelta = palabra.split('');
+vuelta = vuelta.reverse();
+normal = normal.toString();
+vuelta = vuelta.toString()
+if (vuelta == normal){
+    alert ('Esta frase es un palíndromo');
+}else {
+    alert ('Esta frase NO es un palíndromo');
+}
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -7,27 +7,71 @@
     <title>A11-U2</title>
 </head>
 <body>
-    <div id="div1"> <h1>Calculadora</h1></div>
-    <script>
 
-        document.getElementById("div1").innerHTML=("1- suma <br/> 2- resta <br/> 3- Multiplicar <br/> 4- Dvividir <br/>");
-
+   <h3>1.-Sumar</h3> 
+    <button onclick="sumar();">pulsa el boton para sumar:</button>
+    <h3>2.-Restar</h3>
+    <button onclick="restar();">pulsa el boton para restar:</button>
+    <h3>3.-Multiplicar</h3>
+    <button onclick="multiplicar();">pulsa el boton para multiplicar:</button>
+    <h3>4.-Dividir</h3>
+    <button onclick="dividir();">pulsa el boton para dividir:</button>
+    <h3>5.-Modulo</h3>
+    <button onclick="modulo();">pulsa el boton para el resto:</button>
+    <h3>6.-Salir</h3>
+    <button onclick="salir();">pulsa el boton para salir</button></div>
     
-    </script>
     <script>
-        var nombre=prompt("Introduce una opción" );
-        var operando1= parseInt (prompt("Introduce el primer operando" ));
-        var operando2= parseInt (prompt("Introduce el segundo operando" ));
-
-
-        switch (nombre){
-            case '1': document.write(operando1 + operando2);
-            break;
+        
+        function sumar(){
+            var operando1 = parseInt(prompt("Introduce el primer operando: "));
+            var operando2 = parseInt(prompt("Introduce el segundo operando: "));
+            var total = (operando1 + operando2);
+            alert(total);
         }
 
-        
+        function restar(){
+            var operando1 = parseInt(prompt("Introduce el primer operando: "));
+            var operando2 = parseInt(prompt("Introduce el segundo operando: "));
+            var total = (operando1 - operando2);
+            alert(total);
+        }
 
+        function multiplicar(){
+            var operando1 = parseInt(prompt("Introduce el primer operando: "));
+            var operando2 = parseInt(prompt("Introduce el segundo operando: "));
+            var total = (operando1 * operando2);
+            alert(total);
+        }
+
+        function dividir(){
+            var operando1 = parseInt(prompt("Introduce el dividendo: "));
+            var operando2 = parseInt(prompt("Introduce el divisor: "));
+            var total = (operando1 / operando2);
+            alert(total);
+        }
+
+        function modulo(){
+            var operando1 = parseInt(prompt("Introduce el dividendo: "));
+            var operando2 = parseInt(prompt("Introduce el divisor: "));
+            var total = (operando1 % operando2);
+            alert(total);
+        }
+
+        function salir(){
+            var salir = prompt("¡¡Seguro que quieres salir!!");
+            if (salir = 1){
+                document.write("Nos hemos salido");
+            }    
+            
+        
+            
+
+        }        
+        
+        
     </script>
+
     
 
 </body>

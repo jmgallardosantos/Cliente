@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A02-U3</title>
+</head>
+<body>
+
+    <script>
+        var dame_año = prompt( "dame tu año de nacimiento  con 4 digitos ");
+        var dame_mes = parseInt(prompt( "dame tu mes de nacimiento  con 1 digito a ser posible "));
+        var dame_dia = prompt( "dame tu dia de nacimiento  con 1 digito a ser posible ");
+        var año = dame_año;
+        var mes = dame_mes -1;
+        var dia = dame_dia;
+        var mi_edad = new Date(año, mes, dia);
+        var fecha_actual = new Date();
+         var edad = fecha_actual - mi_edad;
+         edad = parseInt(((((((edad/1000)/3600)/24)/30)/12)));
+        document.write("Tu tienes " + edad + " años."); 
+
+    </script>
+    
+</body>
+</html>

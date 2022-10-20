@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A12-U2</title>
+</head>
+<body>
+    <script>
+        //Introducimos los valores en arrays de cada tipo.
+         var valores = [true, 5, false, "hola", "adios", 2];
+        var bolean = [];
+        var numero = [];
+        var cadena = [];
+        for (i of valores){
+            if (typeof i === "boolean"){
+                bolean.push(i);
+            } else if(typeof i === "number"){
+                numero.push(i);
+            } else if (typeof i ==="string") {
+                cadena.push(i);
+            }
+
+        }
+        //Calculamos mediante length el largo de los elementos y luego lo comparamos.
+        var primerElemento = cadena[0].length;
+        var segundoElemento = cadena[1].length;
+        if (primerElemento > segundoElemento){
+            alert('El primer elemento es mayor');
+        } else {
+            alert('El segundo elemento es mayor');
+        }
+        // Operaciones con los boolean.
+        var primerBoolean = bolean[0];
+        var segundoBoolean = bolean[1];
+
+        varLogico1 = primerBoolean || segundoBoolean;
+        alert('El resultado del OR es ' + varLogico1);
+
+        varLogico2 = primerBoolean && segundoBoolean;
+        alert('El resultado del AND es ' + varLogico2);
+        // Operaciones con los numeros.
+        var numero1 = numero[0];
+        var numero2 = numero[1];
+
+        var resultado1 = numero1 + numero2;
+        alert ('La suma de los numeros es ' + resultado1);
+        var resultado2 = numero1 * numero2;
+        alert ('La multiplicacion de los numeros ' + resultado2);
+    </script>
+    
+</body>
+</html>

@@ -7,23 +7,37 @@
     <title>A10-U2</title>
 </head>
 <body>
-
+    <h1>Suma Cifras</h1>
+    <button onclick="sumaEntero();">Suma de Entero</button>
+    <button onclick="sumaEnteroDecimales();">Suma de Entero Decimales</button>
+     
     <script>
-
-
-        var numero = prompt("introduce un numero: "); 
-        var numero = Math.trunc(parseInt(numero));
-        numero = otroNumero;
-        var resultado = 0;
-            for (var i=0; i<=otroNumero.length; i++){
-            resultado += parseInt(otroNumero[i]);
-
-
-                }
-                document.write(resultado)
-            
         
-
+        
+    
+        
+        function sumaEnteroDecimales(){
+            var numero = prompt("introduce un numero: ");
+            var resultado = 0;
+            for (var i=0; i < numero.length; i++){
+                if (numero[i] === ","){
+                    continue;
+                } else {
+                    resultado += parseInt(numero[i]);
+                }
+            } document.write("<p> El resultado es :</p>"+resultado);
+        }
+        function sumaEntero(){
+            var numero = prompt("introduce un numero: ");
+            var resultado = 0;
+            for (var i=0; i<=numero.length; i++){
+                if (numero[i] === ","){
+                    break;
+                } else{
+                    resultado += parseInt(numero[i]);
+                }
+            } document.write("<p> El resultado es :</p>"+resultado);
+        }
                 
             
 

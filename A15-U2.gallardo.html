@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A15-U2</title>
+</head>
+<body>
+    <h1>Cambios de tipo</h1>
+    <h3>1.- Cambiar a Numeric.</h3>
+    <button onclick="pasarNumeric();">Convertir a tipo numerico:</button>
+    <h3>2.- Cambiar a Boolean.</h3>
+    <button onclick="pasarBoolean();">Convertir a tipo Boolean:</button>
+    <h3>3.- cambiar a String.</h3>
+    <button onclick="pasarString();">Convertir a tipo String:</button>
+
+    <script>
+        function pasarNumeric(){
+            var datos = prompt("Inserta algún dato");
+            datos = parseInt(datos)
+            tipoDato = typeof(datos);
+            if (isNaN(datos)){
+                alert('No es un dato valido')
+            }else {
+                alert (datos +" Se ha pasado a " + tipoDato);
+        }
+    }
+        function pasarBoolean(){
+            var datos = prompt("Inserta algún dato"); 
+            datos = Boolean(datos);
+            tipoDato = typeof(datos);
+            if (datos === false){
+                alert ('No hay nada que modificar');
+            }else{
+                alert (" Se ha pasado a " + tipoDato);
+            }
+                
+        }function pasarString(){
+            var datos = prompt("Inserta algún dato");
+            tipoDato = typeof(datos);
+            if (datos === ""){
+                alert ("No has introducido ningún dato")
+            } else{
+                alert (datos + " se ha pasado a " + tipoDato);
+            }
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

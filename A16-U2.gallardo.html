@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A16-U2</title>
+</head>
+<body>
+    <h3>Par o Impar</h3>
+    <button onclick="parimpar();">Par o Impar</button>
+    <h3>Grupos Musicales</h3>
+    <button onclick="grupos();">Grupos Musicales</button>
+    <h3>Fiesta</h3>
+    <button onclick="fiesta();">Asesinato en la Fiesta </button>
+    <h3>Del 1 al 20</h3>
+    <button onclick="unoalveinte();">Calcular del 1 al 20 </button>
+    <h3>Divisible por 3</h3>
+    <button onclick="divisible3();">Divisible por 3 </button>
+    <h3>Divisible por 5</h3>
+    <button onclick="divisible5();">Divisible por 5 </button>
+    <h3>Divisible por 3 y 5</h3>
+    <p>Este ejercicio hace los dos ultimos apartados de la actividad</p>
+    <button onclick="divisibledos();">Divisible por 3 y 5 </button>
+    <script>
+        function parimpar(){
+        var parImpar = parseInt (prompt("Dame un numero: "));
+        if (parImpar%2==0){
+            alert("even");
+        } else {
+            alert("odd");
+        }
+    }
+    function grupos(){
+        var grupos = parseInt (prompt("Ingresa un numero valido: "))
+        if (grupos <= 0){
+            alert("not a group.");
+        } else if (grupos == 1){
+            alert("solo.");
+        } else if (grupos == 2){
+            alert("duet.");
+        } else if (grupos == 3){
+            alert("trio.")
+        } else if (grupos == 4){
+            alert("quartet.")
+        } else {
+            alert("thes es a large group.")
+        }
+    }
+    function fiesta (){
+        var habitacion = prompt("¿En que habitacíon estaba?. Salon de Baile, La galeria, Sala de Billar, Comedor");
+        var arma = prompt("¿que arma utilizo?. veneno, trofeo, palo, cuchillo.");
+        var persona1 = ["Salon de Baile", "veneno"];
+        var persona2 = ["La galeria", "trofeo"];
+        var persona3 = ["Sala de Billar", "palo"];
+        var persona4 = ["Comedor", "cuchillo"];
+
+        if ((habitacion == persona1[0]) && (arma == persona1[1])){
+            alert ("El Sr. Parkes lo hizo en el " + persona1[0] + " con el " + persona1[1] );
+            
+        } else if ((habitacion == persona2[0]) && (arma == persona2[1])){
+            alert ("La Sra. Van Cleve lo hizo en  " + persona2[0] + " con el " + persona2[1] );
+            
+
+        } else if ((habitacion == persona3[0]) && (arma == persona3[1])){
+            alert ("La Sra. Sparr lo hizo en la " + persona3[0] + " con el " + persona3[1] );
+
+
+        } else if ((habitacion == persona4[0]) && (arma == persona4[1])){
+            alert ("El Sr. Kalehoff lo hizo en el " + persona4[0] + " con el " + persona4[1] );
+
+        } else{
+            alert("No hay coincidencia")
+        }
+
+    }
+    
+    function unoalveinte(){
+        var numero = 0;
+        while(numero<20){
+            numero++
+            document.write(numero ) ;
+            document.write("<br>")
+        }
+    }
+
+    function divisible3 (){
+        var numero = parseInt(prompt("Introduce un numero: "));
+            var calculo = numero%3;
+            if (calculo == 0){
+                alert("El " + numero + " es divisible entre 3.");
+            }else {
+                alert(numero +" NO es divisible entre 3.");
+            }
+    }   
+    function divisible5 (){
+        var numero = parseInt(prompt("Introduce un numero: "));
+            var calculo = numero%5;
+            if (calculo == 0){
+                alert("El " + numero + " es divisible entre 5.");
+            }else {
+                alert(numero + " NO es divisible entre 5.");
+            }
+    }   
+
+    function divisibledos (){
+        var numero = parseInt(prompt("Introduce un numero: "));
+            var calculo5 = numero%5;
+            var calculo3 = numero%3;
+            if ((calculo5 == 0) && (calculo3 == 0)){
+                alert("El " + numero + " es divisible entre 3 y 5.");
+            }else {
+                alert(numero + " NO es divisible.");
+            }
+    }   
+    
+    </script>
+
+</body>
+</html>
