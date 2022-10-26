@@ -8,11 +8,17 @@
 </head>
 <body>
 
-    <form>
-        <input type="Button" value="Cambiar Color" onclick="Hola">
-        
+    <form id="marco2">
+        <input type="Button" value="Cambiar Color" onclick="campoColor = Marco1.document.form1.color;
+        if(campoColor.selectedIndex==0){colorin = 'green';}
+        else{colorin = 'blue';}
+        campoFrame = Marco1.document.form1.marcos;
+        if(campoFrame.selectedIndex==0){
+        window.Marco1.document.bgColor = colorin;
+        }else{
+        window.Marco2.document.bgColor = colorin;
         }">
-    </form>
+        </form>
     
 </body>
 </html>
