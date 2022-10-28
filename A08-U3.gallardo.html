@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A08-U3</title>
+</head>
+<body>
+    <h1>Areas</h1>
+    <h3>Selecciona el botón para calcular areas.</h3>
+
+    <button onclick="circulo();">Area circulo</button>
+    <button onclick="triangulo();">Area Triangulo</button>
+
+    <script>
+
+        
+// El area del circulo es PI * r2
+
+function circulo(){
+var radio =prompt (" Introduzca El radio para calcular el area del circulo ")
+resultado = Math.PI * Math.pow(radio,2);
+resultado = parseFloat(Math.round(resultado * 100) / 100).toFixed(2);
+alert("El area de " + radio + " es " + resultado + " cm2.");
+}
+// El area de un triangul es base * altura /2
+
+function triangulo(){
+var base = prompt(" Introduzca la Base para calcular el area de un triangulo ")
+var altura = prompt(" Introduzca la Altura para calcular el area de un triangulo ")
+var resultadoT = parseFloat((base * altura)/2).toFixed(2);
+alert ("El area de base " + base +" y de altura "+ altura + " es " + resultadoT + " cm2" )
+} 
+</script>
+    
+</body>
+</html>
