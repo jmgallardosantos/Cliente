@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A10-U3</title>
+</head>
+<body>
+    <script>
+
+var cadena = prompt("escribe la cadena");
+var empezar = prompt("donde quieres empezar");
+empezar =cadena.indexOf(empezar);
+nueva_empezar = cadena.slice(empezar);
+var terminar = prompt("donde quieres terminar");
+terminar =nueva_empezar.indexOf(terminar)
+var nueva_cadena = nueva_empezar.slice(nueva_empezar, terminar+1);
+alert ("La cadena inicial es " + cadena);
+alert("La cadena final es " +nueva_cadena);
+
+
+
+
+
+    </script>
+</body>
+</html>

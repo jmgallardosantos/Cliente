@@ -9,8 +9,12 @@
 <body>
 
     <script>
-        prompt(" Escribe una frase ");
-
+        var texto = prompt (" Dame una frase ");
+        var tex_expl = texto.trim();
+        tex_expl = texto.split(" ");
+        alert (tex_expl[0]);
+        alert (tex_expl[tex_expl.length -1]);
+        alert ( tex_expl.length);
 
 
     </script>

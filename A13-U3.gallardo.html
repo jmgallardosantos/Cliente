@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A13-U3</title>
+</head>
+<body>
+
+    <script>
+
+        var falso1 = new Boolean();
+        var falso2 = new Boolean(false);
+        var falso3 = new Boolean(0);
+        var falso4 = new Boolean(null);
+        var falso5 = new Boolean('');
+
+        var verdadero1 = new Boolean('cadena');
+        var verdadero2 = new Boolean ({});
+        var verdadero3 = new Boolean([]);
+        var verdadero4 = new Boolean (true);
+        var verdadero5 = new Boolean(!null);
+
+        document.write("falso 1 tiene valor " + falso1 + '</br>');
+        document.write("falso 2 tiene valor " + falso2 + '</br>');
+        document.write("falso 3 tiene valor " + falso3 + '</br>');
+        document.write("falso 4 tiene valor " + falso4 + '</br>');
+        document.write("falso 5 tiene valor " + falso5 + '</br>');
+        document.write("verdadero 1 tiene valor " + verdadero1 + '</br>');
+        document.write("verdadero 2 tiene valor " + verdadero2 + '</br>');
+        document.write("verdadero 3 tiene valor " + verdadero3 + '</br>');
+        document.write("verdadero 4 tiene valor " + verdadero4 + '</br>');
+        document.write("verdadero 5 tiene valor " + verdadero5 + '</br>');
+    </script>
+    
+</body>
+</html>
