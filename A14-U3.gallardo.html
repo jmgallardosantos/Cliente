@@ -11,8 +11,12 @@
 <script>
 
 var hora = prompt("dame hora");
-var expresion = /^/d{2} \:/d{2}\:/d{2}$/;
-
+var expresion = /^\d{2}\:\d{2}\:\d{2}$/;
+if(expresion.test(hora)){
+    alert ("Formato correcto " + hora);
+}else{
+    alert("No es correcta");
+}
 
 </script>
  
