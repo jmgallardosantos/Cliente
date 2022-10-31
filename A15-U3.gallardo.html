@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A15-U3</title>
+</head>
+<body>
+
+    <script>
+
+var matricula = prompt("Dame numero de matrícula   Formato:0000 AAA");
+var expresion = /^\d{4}\s[A-Z]{3}$/;
+if(expresion.test(matricula)){
+ alert ("La matricula es valida; Tu matricula es  " + matricula);
+} else {
+    alert ("La matricula no tiene el formato exigido");
+}
+    </script>
+    
+</body>
+</html>
