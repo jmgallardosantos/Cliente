@@ -9,10 +9,19 @@
 <body>
 
     <textarea id="texto" style="width: 200px; height: 200px;"></textarea>
-    <input type="submit" value="Enviar">
+    <button onclick="formulario();">Enviar</button>
     <script>
-/^\w+|(?<=\.)(\s|\n)\w+/gm
-var texto =document.getElementById(texto);
+
+function formulario(){
+var textos = document.getElementById('texto').value;
+//var exp = /^\w+|(?<=\.)(\s|\n)\w+/gm;
+//if(exp.test(textos)){
+    alert(textos);
+}
+
+
+
+
     </script>
     
 </body>
