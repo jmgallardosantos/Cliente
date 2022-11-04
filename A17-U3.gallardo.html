@@ -13,11 +13,16 @@
     <script>
 
 function formulario(){
-var textos = document.getElementById("texto").rows;
-//var filas = textos.getElementById('br');
-//var exp = /^\w+|(?<=\.)(\s|\n)\w+/gm;
-//if(exp.test(textos)){
-    alert(textos);
+var textos = (document.getElementById("texto").value).trim();
+var exp = (/^\w+|(?<=\.)(\s|\n)\w+/gm);
+var nuevo_texto = textos.match(exp);
+
+for (var i = 0; i < nuevo_texto.length; i++){
+    document.write (nuevo_texto[i] + "<br>");
+}
+
+
+
 }
 
 
