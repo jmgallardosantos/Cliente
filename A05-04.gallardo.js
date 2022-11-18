@@ -1,0 +1,16 @@
+var palabras = prompt("Escribe varias palabras");
+var arr = palabras.split(' '); 
+alert (arr);
+arr.reverse();
+alert(arr);
+arr.reverse();
+var primera = arr[0];
+alert (primera);
+var ultima = arr[arr.length -1];
+alert(ultima);
+var largo = arr.length;
+alert(largo);
+arr.sort();
+alert(arr);
+arr.reverse();
+alert(arr);
