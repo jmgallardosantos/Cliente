@@ -6,77 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A10-U4</title>
     <style>
-      table{
-          border-collapse: collapse;
-          border-spacing: 0;
-      }
-      th, td{
-          padding: 10px 20px;
-          border: 1px solid #000;
-      }
-  </style>
-
+        table{
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        th, td{
+            padding: 10px 20px;
+            border: 1px solid #000;
+        }
+    </style>
 </head>
 <body>
-  <h1>Tabla HTML dibujada con JS</h1>
-  <table>
-      <thead>
-          <tr>
-              <th>Marca</th>
-              <th>Modelo</th>
-              <th>Color</th>
-              <th>AñoFabricacion</th>
-          </tr>
-      </thead>
-      <tbody id="cuerpoTabla">
+    <h1>Nuestra tabla Coches</h1>
 
-</tbody>
-  </table>
-       <script>
+    <table>
+        <thead>
+            <tr>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Color</th>
+                <th>AñoFabricacion</th>
+            </tr>
+        </thead>
+        <tbody id="cuerpoTabla">
 
-const coche = [{
+        </tbody>
+    </table>
+    <script src="A10-U4.gallardo.js"></script>
 
-        marca: "Mazda",
-        modelo: "x30",
-        color: "rojo",
-        añoFabricacion:2001,
-    },
-    {
 
-        marca: "Peugeot",
-        modelo: 307,
-        color: "verde",
-        añoFabricacion:1995,
-    },
-    
-];
+</body>
 
-// Ahora dibujamos la tabla
-const $cuerpoTabla = document.querySelector("#cuerpoTabla");
-// Recorrer todos los productos
-coche.forEach(icoche => {
-    // Crear un <tr>
-    const $tr = document.createElement("tr");
-    // Creamos el <td> de nombre y lo adjuntamos a tr
-    let $tdMarca = document.createElement("td");
-    $tdMarca.textContent = icoche.marca; // el textContent del td es el nombre
-    $tr.appendChild($tdMarca);
-    // El td de precio
-    let $tdModelo = document.createElement("td");
-    $tdModelo.textContent = icoche.modelo;
-    $tr.appendChild($tdMrecio);
-    // El td del código
-    let $tdColor = document.createElement("td");
-    $tdColor.textContent = color.coche;
-    $tr.appendChild($tdColor);
-     // El td del código
-     let $tdAñoFabricacion = document.createElement("td");
-    $tdAñoFabricacion.textContent = añoFabricacion.coche;
-    $tr.appendChild($tdAñoFabricacion);
-    // Finalmente agregamos el <tr> al cuerpo de la tabla
-    $cuerpoTabla.appendChild($tr);
-    // Y el ciclo se repite hasta que se termina de recorrer todo el arreglo
-});
+
+    <script>
 
     </script>
     
