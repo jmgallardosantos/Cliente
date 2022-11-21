@@ -11,29 +11,17 @@
         
 
     var aleatorios =Array.from({length: 10}, ()=> Math.floor(Math.random()*(0,11)));
-    alert (aleatorios);
+    alert ("Los 10 numeros aleatorios son: " + aleatorios);
     var menores = aleatorios.filter(aleatorio => { return aleatorio < 8 });
-    alert( menores); 
+    alert("Los numero aleatorios menores de 8 son: " + menores); 
     var impares = aleatorios.filter(impar =>{return(impar%2 ==1) });
-    alert (impares);
-    var modificado = [];
     for (var i =0; i <=aleatorios.length; i++){
-        for (var j =0; j <= impares.length; j++){
-            if (aleatorios[i] == impares[j]){
-                aleatorios.fill("impar")
+        if ((aleatorios[i]%2)==1 ){
+            aleatorios[i]= "impar";
+         }
 
-            }
-            
-        }
-
-    }        alert (aleatorios);
-    /*aleatorios.forEach (function(numero) {
-    if (numero == impares) {
-        aleatorios.shift()}});
-
-        alert( aleatorios);*/
-
-
+    }
+    alert ("Los numeros impares cambiados por impar son: " + aleatorios);
 
     </script>
 </body>
