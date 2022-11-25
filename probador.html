@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probador</title>
+</head>
+<body>
+
+    <script>
+
+var frutas = ["Banana", "Orange", "Apple", "Mango"];
+document.write(frutas + "</br>");
+var fruits = new Array ("Banana", "Orange", "Apple", "Mango");
+document.write(fruits + "</br>");
+
+var fruits = new Array ("Banana", "Orange", "Apple", "Mango");
+document.write(fruits.toString() + "</br>");
+
+var pizzas = new Array("Carbonara", "Quattro_Stagioni", "Diavola");
+document.write(pizzas.join(" - ") + "</br>");
+
+var equipos_a = ["Real Madrid", "Barcelona","Valencia"];
+var equipos_b = ["Hércules", "Elche","Valladolid"];
+var equipos_copa_del_rey = equipos_a.concat(equipos_b);
+document.write("Equipos que juegan la copa: " + equipos_copa_del_rey + ".");
+
+    </script>
+    
+</body>
+</html>
