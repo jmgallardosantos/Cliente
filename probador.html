@@ -9,22 +9,85 @@
 <body>
 
     <script>
-
+//Creacion de un array de fomrma directa o como un objeto.
 var frutas = ["Banana", "Orange", "Apple", "Mango"];
 document.write(frutas + "</br>");
 var fruits = new Array ("Banana", "Orange", "Apple", "Mango");
 document.write(fruits + "</br>");
 
+//Con el metodo .toString() muestra los elementos de un array
 var fruits = new Array ("Banana", "Orange", "Apple", "Mango");
 document.write(fruits.toString() + "</br>");
 
+// Con el metdo .join() modifica el elemento separador del array
 var pizzas = new Array("Carbonara", "Quattro_Stagioni", "Diavola");
 document.write(pizzas.join(" - ") + "</br>");
 
+// El metodo .concat() concatena 2 array en 1.
 var equipos_a = ["Real Madrid", "Barcelona","Valencia"];
 var equipos_b = ["Hércules", "Elche","Valladolid"];
 var equipos_copa_del_rey = equipos_a.concat(equipos_b);
 document.write("Equipos que juegan la copa: " + equipos_copa_del_rey + ".");
+
+// El metodo .push() introduce los parametro dentro del push en el array por DETRAS.
+var pizzas = new Array("Carbonara", "Quattro_Stagioni","Diavola");
+var nuevo_numero_de_pizzas = pizzas.push("Margherita","Boscaiola");
+document.write("Número de pizzas disponibles: " + nuevo_numero_de_pizzas + "<br />");
+document.write(pizzas + "</br>");
+
+//El metodo .pop() Elimina el ultimo elemento de un array
+var premios = new Array("Coche", "1000 Euros", "Manual de JavaScript");
+var tercer_premio = premios.pop();
+document.write("El tercer premio es: " + tercer_premio + "<br />");
+document.write("Quedan los siguientes premios: " + premios + "</br>");
+
+//El metodo delete (nombre_de_array[posicion]) elimina el elemento seleccionado pero te deja el hueco vacio
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.write("Array: " + fruits +"<br>");
+document.write("Longitud: " + fruits.length + "<br>");
+delete fruits[0];
+document.write("Posición 0: " + fruits[0] +"<br>");
+document.write("Array: " + fruits +"<br>");
+document.write("Longitud: " + fruits.length + "<br>");
+
+//El metodo unshift() introduce los elementos pasados a un array por delante y te da el numero de elementos.
+var sedes_JJOO = new Array("Atenas", "Sydney","Atlanta");
+var numero_sedes = sedes_JJOO.unshift("Pekín", "España");
+document.write("Últimas " + numero_sedes + " sedes olímpicas: " + sedes_JJOO  + "<br/>");
+
+//El metodo .shift() elimina el primero elemento de un array 
+var pizzas = new Array("Carbonara", "Quattro_Stagioni", "Diavola");
+var pizza_eliminada = pizzas.shift();
+document.write(pizza_eliminada  + "<br/>");
+document.write("Pizza eliminada de la lista: " + pizza_eliminada + "<br/>");
+document.write("Nueva lista de pizzas: " + pizzas  + "</br>");
+document.write("Tiene: " + pizzas.length + " lineas ");
+
+//El metodo .sort() ordena los elementos de un array que no sean numeros
+var apellidos = new Array("Pérez", "Guijarro", "Arias","González");
+apellidos.sort();
+document.write(apellidos + "</br>");
+
+//Para ordenar los numeros de un array necesitamos la siguiente funcion.
+var points = [40,100,1,5,25,10];
+points.sort((a,b)=> {return a-b});
+document.write (points + "<br/>");
+
+//El metodo .reverse() retorna el array modificado cambiando las posiciones
+var numeros = new Array(1,2,3,4,5,6,7,8,9,10);
+numeros.reverse();
+document.write(numeros + "<br/>");
+
+//El metodo .slice(1,3) devuelve un nuevo array con los elementos del 1 al 3 sin contar el 3
+var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+var myBest = fruits.slice(1,3);
+document.write(myBest + "</br>");
+
+var coches = new Array("Ferrari", "BMW", "Fiat");
+coches.splice(2,0,"Seat","Audi"); //add
+document.write(coches + "</br>");
+coches.splice(1,2); //remove
+document.write(coches + "</br>");
 
     </script>
     
