@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style type="text/css">
+
+
+
+
+    </style>
+</head>
+<body>
+    
+    <form action="" method="">
+        <fieldset background-color: blue> <legend> datos personales</legend></legfieldset>
+        <ul>
+         <li>
+           <label for="name">Nombre:</label>
+           <input type="text" id="name" name="user_name" size="40" required>
+         </li>
+         <li>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="user_apellidos" size="20" class="col">
+          </li>
+         <li>
+           <label for="web">Pagina Web:</label>
+           <input type="url" id="mail" name="user_mail">
+         </li>
+         <li>
+            <label for="mail">Correo electrónico:</label>
+            <input type="email" id="mail" name="user_mail">
+          </li>
+
+          <li>
+            <input type="color" id="color" name="Color">
+          </li>
+
+          <li>
+            <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+          </li>
+        
+         
+        </ul>
+        </fieldset>
+        <fieldset> <legend> Indique sus generos</legend></legfieldset>
+            <select name="sexo" id="sexo" multiple>
+                <option value="hombre">Hombre</option>
+                <option value="mujer">Mujer</option>
+                <option value="no se sabe">No se sabe</option>
+            </select>
+                <p>Colores favoritos</p>
+            </br><input name="hombre" type="checkbox" value="Hombre"/> Hombre
+            </br><input name="Mujer" type="checkbox" value="Mujer"/> Mujer
+            </br><input name="no se sabe" type="checkbox" value="no se sabe"/> No se sabe
+
+             
+           
+            
+          
+    
+        </fieldset>
+        <fieldset> <legend>login</legend></legfieldset>
+            <li>
+                <label for="name">Nombre de Usuario:</label>
+                <input type="text" id="name" name="nombre_usuario" size="40" required>
+              </li>  
+              <li>
+                <label for="contraseña">Constraseña:</label>
+                <input type="password" id="name" name="contraseña" size="40" required>
+              </li>
+        </fieldset>
+        <fieldset> <legend>consentimiento escogido por defecto</legend>
+           
+            <input type="checkbox" id="scales" name="scales" checked> dfdsfsfdfsdf
+            <input type="checkbox" id="scales" name="scales" checked> dfdsfsfdfsdf
+
+        </fieldset>
+        <fieldset> <legend>consentimiento escogido por defecto con radio</legend>
+           
+            <input type="radio" id="scales" name="scales" checked> dfdsfsfdfsdf
+            <input type="radio" id="scales" name="scales" > dfdsfsfdfsdf
+
+        </fieldset>
+    <input type="submit" name ="enviar" value="Enviar" >
+    <input type="reset" name ="borrar" value="Borrar" >
+
+    </form>
+</body>
+</html>
